@@ -48,22 +48,22 @@
         __block NSRange lastRange = NSMakeRange(0, 0);
         [results enumerateObjectsUsingBlock:^(NSTextCheckingResult *object, NSUInteger index, BOOL * _Nonnull stop) {
             NSRange rang = [object range];
-            NSUInteger location = rang.location;
+            // NSUInteger location = rang.location;
             XXReadChapterListModel *readChapterModel = [XXReadChapterListModel new];
             
             /// 开始
             if (index == 0) {
                 readChapterModel.bookName = bookName;
                 readChapterModel.chapterId = [NSNumber numberWithInteger:index + 1];
-                readChapterModel.chapterName = [content substringWithRange:NSMakeRange(0, location)];
+                readChapterModel.chapterName = @"开始";
             } else if (index == results.count - 1) { /// 最后一章
                 readChapterModel.bookName = bookName;
                 readChapterModel.chapterId = [NSNumber numberWithInteger:index + 1];
-                readChapterModel.chapterName = [content substringWithRange:NSMakeRange(lastRange.location, content.length - lastRange.location)];
+                readChapterModel.chapterName = [content substringWithRange:rang];
             } else { /// 中间章节
                 readChapterModel.bookName = bookName;
                 readChapterModel.chapterId = [NSNumber numberWithInteger:index + 1];
-                readChapterModel.chapterName = [content substringWithRange:NSMakeRange(lastRange.location, location - lastRange.location)];
+                readChapterModel.chapterName = [content substringWithRange:lastRange];
             }
             
             [readChapterListModels addObject:readChapterModel];
