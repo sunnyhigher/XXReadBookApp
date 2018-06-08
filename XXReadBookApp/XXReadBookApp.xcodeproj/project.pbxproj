@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11D4EDDC20CA2E43001F28E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EDDB20CA2E43001F28E5 /* AppDelegate.m */; };
+		11D4EDDF20CA2E43001F28E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EDDE20CA2E43001F28E5 /* ViewController.m */; };
+		11D4EDE220CA2E43001F28E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D4EDE020CA2E43001F28E5 /* Main.storyboard */; };
+		11D4EDE520CA2E44001F28E5 /* XXReadBookApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EDE320CA2E44001F28E5 /* XXReadBookApp.xcdatamodeld */; };
+		11D4EDE720CA2E46001F28E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D4EDE620CA2E46001F28E5 /* Assets.xcassets */; };
+		11D4EDEA20CA2E46001F28E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D4EDE820CA2E46001F28E5 /* LaunchScreen.storyboard */; };
+		11D4EDED20CA2E46001F28E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EDEC20CA2E46001F28E5 /* main.m */; };
+		11D4EDF420CA2F38001F28E5 /* 《师士传说》.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11D4EDF320CA2F38001F28E5 /* 《师士传说》.txt */; };
+		11D4EDFB20CA32BC001F28E5 /* XXReadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EDFA20CA32BC001F28E5 /* XXReadModel.m */; };
+		11D4EE0520CA554F001F28E5 /* XXReadChapterListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EE0420CA554F001F28E5 /* XXReadChapterListModel.m */; };
+		11D4EE0820CA589F001F28E5 /* XXReadRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EE0720CA589F001F28E5 /* XXReadRecordModel.m */; };
+		11D4EE0B20CA5921001F28E5 /* XXReadChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EE0A20CA5921001F28E5 /* XXReadChapterModel.m */; };
+		11D4EE1420CA6143001F28E5 /* XXReadUtilites.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EE1320CA6143001F28E5 /* XXReadUtilites.m */; };
+		11D4EE1720CA6D28001F28E5 /* XXReadParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EE1520CA6D28001F28E5 /* XXReadParserManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11D4EDD720CA2E43001F28E5 /* XXReadBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXReadBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D4EDDA20CA2E43001F28E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11D4EDDB20CA2E43001F28E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11D4EDDD20CA2E43001F28E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		11D4EDDE20CA2E43001F28E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		11D4EDE120CA2E43001F28E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11D4EDE420CA2E44001F28E5 /* XXReadBookApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XXReadBookApp.xcdatamodel; sourceTree = "<group>"; };
+		11D4EDE620CA2E46001F28E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11D4EDE920CA2E46001F28E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11D4EDEB20CA2E46001F28E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D4EDEC20CA2E46001F28E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11D4EDF320CA2F38001F28E5 /* 《师士传说》.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "《师士传说》.txt"; sourceTree = "<group>"; };
+		11D4EDF920CA32BC001F28E5 /* XXReadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXReadModel.h; sourceTree = "<group>"; };
+		11D4EDFA20CA32BC001F28E5 /* XXReadModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXReadModel.m; sourceTree = "<group>"; };
+		11D4EE0320CA554F001F28E5 /* XXReadChapterListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXReadChapterListModel.h; sourceTree = "<group>"; };
+		11D4EE0420CA554F001F28E5 /* XXReadChapterListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXReadChapterListModel.m; sourceTree = "<group>"; };
+		11D4EE0620CA589F001F28E5 /* XXReadRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXReadRecordModel.h; sourceTree = "<group>"; };
+		11D4EE0720CA589F001F28E5 /* XXReadRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXReadRecordModel.m; sourceTree = "<group>"; };
+		11D4EE0920CA5921001F28E5 /* XXReadChapterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXReadChapterModel.h; sourceTree = "<group>"; };
+		11D4EE0A20CA5921001F28E5 /* XXReadChapterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXReadChapterModel.m; sourceTree = "<group>"; };
+		11D4EE1220CA6143001F28E5 /* XXReadUtilites.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXReadUtilites.h; sourceTree = "<group>"; };
+		11D4EE1320CA6143001F28E5 /* XXReadUtilites.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXReadUtilites.m; sourceTree = "<group>"; };
+		11D4EE1520CA6D28001F28E5 /* XXReadParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXReadParserManager.m; sourceTree = "<group>"; };
+		11D4EE1620CA6D28001F28E5 /* XXReadParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXReadParserManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11D4EDD420CA2E43001F28E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D4EDCE20CA2E43001F28E5 = {
+			isa = PBXGroup;
+			children = (
+				11D4EDF320CA2F38001F28E5 /* 《师士传说》.txt */,
+				11D4EDD920CA2E43001F28E5 /* XXReadBookApp */,
+				11D4EDD820CA2E43001F28E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11D4EDD820CA2E43001F28E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11D4EDD720CA2E43001F28E5 /* XXReadBookApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11D4EDD920CA2E43001F28E5 /* XXReadBookApp */ = {
+			isa = PBXGroup;
+			children = (
+				11D4EDF520CA3243001F28E5 /* ReadBook */,
+				11D4EDDA20CA2E43001F28E5 /* AppDelegate.h */,
+				11D4EDDB20CA2E43001F28E5 /* AppDelegate.m */,
+				11D4EDDD20CA2E43001F28E5 /* ViewController.h */,
+				11D4EDDE20CA2E43001F28E5 /* ViewController.m */,
+				11D4EDE020CA2E43001F28E5 /* Main.storyboard */,
+				11D4EDE620CA2E46001F28E5 /* Assets.xcassets */,
+				11D4EDE820CA2E46001F28E5 /* LaunchScreen.storyboard */,
+				11D4EDEB20CA2E46001F28E5 /* Info.plist */,
+				11D4EDEC20CA2E46001F28E5 /* main.m */,
+				11D4EDE320CA2E44001F28E5 /* XXReadBookApp.xcdatamodeld */,
+			);
+			path = XXReadBookApp;
+			sourceTree = "<group>";
+		};
+		11D4EDF520CA3243001F28E5 /* ReadBook */ = {
+			isa = PBXGroup;
+			children = (
+				11D4EDF820CA3274001F28E5 /* Controller */,
+				11D4EDF720CA3270001F28E5 /* View */,
+				11D4EDF620CA326B001F28E5 /* Model */,
+			);
+			path = ReadBook;
+			sourceTree = "<group>";
+		};
+		11D4EDF620CA326B001F28E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11D4EE1620CA6D28001F28E5 /* XXReadParserManager.h */,
+				11D4EE1520CA6D28001F28E5 /* XXReadParserManager.m */,
+				11D4EDF920CA32BC001F28E5 /* XXReadModel.h */,
+				11D4EDFA20CA32BC001F28E5 /* XXReadModel.m */,
+				11D4EE0320CA554F001F28E5 /* XXReadChapterListModel.h */,
+				11D4EE0420CA554F001F28E5 /* XXReadChapterListModel.m */,
+				11D4EE0920CA5921001F28E5 /* XXReadChapterModel.h */,
+				11D4EE0A20CA5921001F28E5 /* XXReadChapterModel.m */,
+				11D4EE0620CA589F001F28E5 /* XXReadRecordModel.h */,
+				11D4EE0720CA589F001F28E5 /* XXReadRecordModel.m */,
+				11D4EE1220CA6143001F28E5 /* XXReadUtilites.h */,
+				11D4EE1320CA6143001F28E5 /* XXReadUtilites.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11D4EDF720CA3270001F28E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11D4EDF820CA3274001F28E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11D4EDD620CA2E43001F28E5 /* XXReadBookApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D4EDF020CA2E46001F28E5 /* Build configuration list for PBXNativeTarget "XXReadBookApp" */;
+			buildPhases = (
+				11D4EDD320CA2E43001F28E5 /* Sources */,
+				11D4EDD420CA2E43001F28E5 /* Frameworks */,
+				11D4EDD520CA2E43001F28E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XXReadBookApp;
+			productName = XXReadBookApp;
+			productReference = 11D4EDD720CA2E43001F28E5 /* XXReadBookApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11D4EDCF20CA2E43001F28E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XX;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "段新瑞";
+				TargetAttributes = {
+					11D4EDD620CA2E43001F28E5 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 11D4EDD220CA2E43001F28E5 /* Build configuration list for PBXProject "XXReadBookApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11D4EDCE20CA2E43001F28E5;
+			productRefGroup = 11D4EDD820CA2E43001F28E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11D4EDD620CA2E43001F28E5 /* XXReadBookApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11D4EDD520CA2E43001F28E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D4EDEA20CA2E46001F28E5 /* LaunchScreen.storyboard in Resources */,
+				11D4EDE720CA2E46001F28E5 /* Assets.xcassets in Resources */,
+				11D4EDF420CA2F38001F28E5 /* 《师士传说》.txt in Resources */,
+				11D4EDE220CA2E43001F28E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11D4EDD320CA2E43001F28E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D4EE1720CA6D28001F28E5 /* XXReadParserManager.m in Sources */,
+				11D4EE0820CA589F001F28E5 /* XXReadRecordModel.m in Sources */,
+				11D4EE0520CA554F001F28E5 /* XXReadChapterListModel.m in Sources */,
+				11D4EDE520CA2E44001F28E5 /* XXReadBookApp.xcdatamodeld in Sources */,
+				11D4EE0B20CA5921001F28E5 /* XXReadChapterModel.m in Sources */,
+				11D4EE1420CA6143001F28E5 /* XXReadUtilites.m in Sources */,
+				11D4EDDF20CA2E43001F28E5 /* ViewController.m in Sources */,
+				11D4EDED20CA2E46001F28E5 /* main.m in Sources */,
+				11D4EDDC20CA2E43001F28E5 /* AppDelegate.m in Sources */,
+				11D4EDFB20CA32BC001F28E5 /* XXReadModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11D4EDE020CA2E43001F28E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11D4EDE120CA2E43001F28E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11D4EDE820CA2E46001F28E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11D4EDE920CA2E46001F28E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11D4EDEE20CA2E46001F28E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11D4EDEF20CA2E46001F28E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11D4EDF120CA2E46001F28E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FM63V954T;
+				INFOPLIST_FILE = XXReadBookApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ruixinduan.XXReadBookApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11D4EDF220CA2E46001F28E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FM63V954T;
+				INFOPLIST_FILE = XXReadBookApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ruixinduan.XXReadBookApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11D4EDD220CA2E43001F28E5 /* Build configuration list for PBXProject "XXReadBookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D4EDEE20CA2E46001F28E5 /* Debug */,
+				11D4EDEF20CA2E46001F28E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11D4EDF020CA2E46001F28E5 /* Build configuration list for PBXNativeTarget "XXReadBookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D4EDF120CA2E46001F28E5 /* Debug */,
+				11D4EDF220CA2E46001F28E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		11D4EDE320CA2E44001F28E5 /* XXReadBookApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				11D4EDE420CA2E44001F28E5 /* XXReadBookApp.xcdatamodel */,
+			);
+			currentVersion = 11D4EDE420CA2E44001F28E5 /* XXReadBookApp.xcdatamodel */;
+			path = XXReadBookApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 11D4EDCF20CA2E43001F28E5 /* Project object */;
+}
