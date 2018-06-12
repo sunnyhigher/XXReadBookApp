@@ -24,12 +24,11 @@
     XXReadModel *readModel = [XXReadModel new];
     readModel.bookName = bookName;
     
+    /// 获取章节目录列表数组
     readModel.readChapterListModels = [XXReadUtilites separateChapterListsBookName:bookName content:content];
     
-    for (XXReadChapterListModel *model in readModel.readChapterListModels) {
-        NSLog(@"%@", model.chapterName);
-    }
-//    NSLog(@"%@", readModel.readChapterListModels);
+    
+    
     block(readModel);
 }
 

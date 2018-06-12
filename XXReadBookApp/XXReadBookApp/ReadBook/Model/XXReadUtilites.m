@@ -38,7 +38,7 @@
 + (NSArray <XXReadChapterListModel *> *)separateChapterListsBookName:(NSString *)bookName content:(NSString *)content {
     NSMutableArray <XXReadChapterListModel *> *readChapterListModels = [NSMutableArray new];
     
-    NSString *parten = @"第[0-9一二三四五六七八九十百千]*[章回节].*";
+    NSString *parten = @"[\t\n\\s+]第[0-9一二三四五六七八九十百千万零]*[章回节].*";
     
     NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:parten options:NSRegularExpressionCaseInsensitive error:nil];
     
@@ -65,7 +65,7 @@
                 readChapterModel.chapterId = [NSNumber numberWithInteger:index + 1];
                 readChapterModel.chapterName = [content substringWithRange:lastRange];
             }
-            
+            readChapterModel.chapterName = [self stringByTrimStr:readChapterModel.chapterName];
             [readChapterListModels addObject:readChapterModel];
             lastRange = rang;
         }];
@@ -78,6 +78,11 @@
     }
     
     return [NSArray arrayWithArray:readChapterListModels];
+}
+
++ (NSString *)stringByTrimStr:(NSString *)str {
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    return [str stringByTrimmingCharactersInSet:set];
 }
 
 #pragma mark -
