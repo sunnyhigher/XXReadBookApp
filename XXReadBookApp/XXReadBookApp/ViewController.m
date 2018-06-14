@@ -24,7 +24,7 @@
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"《师士传说》" withExtension:@"txt"];
     [XXReadParserManager parserLocalModelWithURL:fileURL
                                readParserModel:^(XXReadModel *model){
-                                   NSLog(@"%@", model);
+                                   // NSLog(@"%@", model);
                                }];
 }
 

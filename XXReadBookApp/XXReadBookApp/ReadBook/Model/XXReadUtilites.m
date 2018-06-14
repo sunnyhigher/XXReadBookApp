@@ -38,7 +38,7 @@
 + (NSArray <XXReadChapterListModel *> *)separateChapterListsBookName:(NSString *)bookName content:(NSString *)content {
     NSMutableArray <XXReadChapterListModel *> *readChapterListModels = [NSMutableArray new];
     
-    NSString *parten = @"第[0-9一二三四五六七八九十百千]*[章回节].*";
+    NSString *parten = @"[\t\n\\s+]第[0-9一二三四五六七八九十百千万零]*[章回节].*";
     
     NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:parten options:NSRegularExpressionCaseInsensitive error:nil];
     
@@ -48,24 +48,24 @@
         __block NSRange lastRange = NSMakeRange(0, 0);
         [results enumerateObjectsUsingBlock:^(NSTextCheckingResult *object, NSUInteger index, BOOL * _Nonnull stop) {
             NSRange rang = [object range];
-            NSUInteger location = rang.location;
+            // NSUInteger location = rang.location;
             XXReadChapterListModel *readChapterModel = [XXReadChapterListModel new];
             
             /// 开始
             if (index == 0) {
                 readChapterModel.bookName = bookName;
                 readChapterModel.chapterId = [NSNumber numberWithInteger:index + 1];
-                readChapterModel.chapterName = [content substringWithRange:NSMakeRange(0, location)];
+                readChapterModel.chapterName = @"开始";
             } else if (index == results.count - 1) { /// 最后一章
                 readChapterModel.bookName = bookName;
                 readChapterModel.chapterId = [NSNumber numberWithInteger:index + 1];
-                readChapterModel.chapterName = [content substringWithRange:NSMakeRange(lastRange.location, content.length - lastRange.location)];
+                readChapterModel.chapterName = [content substringWithRange:rang];
             } else { /// 中间章节
                 readChapterModel.bookName = bookName;
                 readChapterModel.chapterId = [NSNumber numberWithInteger:index + 1];
-                readChapterModel.chapterName = [content substringWithRange:NSMakeRange(lastRange.location, location - lastRange.location)];
+                readChapterModel.chapterName = [content substringWithRange:lastRange];
             }
-            
+            readChapterModel.chapterName = [self stringByTrimStr:readChapterModel.chapterName];
             [readChapterListModels addObject:readChapterModel];
             lastRange = rang;
         }];
@@ -78,6 +78,11 @@
     }
     
     return [NSArray arrayWithArray:readChapterListModels];
+}
+
++ (NSString *)stringByTrimStr:(NSString *)str {
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    return [str stringByTrimmingCharactersInSet:set];
 }
 
 #pragma mark -

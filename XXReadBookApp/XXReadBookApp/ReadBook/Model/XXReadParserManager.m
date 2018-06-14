@@ -8,6 +8,7 @@
 
 #import "XXReadParserManager.h"
 #import "XXReadUtilites.h"
+#import "XXReadChapterListModel.h"
 
 @interface XXReadParserManager ()
 
@@ -23,10 +24,11 @@
     XXReadModel *readModel = [XXReadModel new];
     readModel.bookName = bookName;
     
+    /// 获取章节目录列表数组
     readModel.readChapterListModels = [XXReadUtilites separateChapterListsBookName:bookName content:content];
     
     
-    NSLog(@"%@", readModel.readChapterListModels);
+    
     block(readModel);
 }
 
