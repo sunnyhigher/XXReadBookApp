@@ -12,7 +12,7 @@
 /**
  章节列表模型
  */
-@interface XXReadChapterListModel : NSObject
+@interface XXReadChapterListModel : NSObject <NSCoding>
 
 /**
  名称
@@ -22,7 +22,7 @@
 /**
  章节id
  */
-@property (nonatomic, strong) NSNumber *chapterId;
+@property (nonatomic, copy) NSString *chapterId;
 
 /**
  章节名称

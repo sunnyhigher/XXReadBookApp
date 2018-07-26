@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1107489221005DF900D9596A /* NSString+BinAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1107489021005DF800D9596A /* NSString+BinAdd.m */; };
+		1107489A2100BFD600D9596A /* NSNumber+BinAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 110748962100BFD600D9596A /* NSNumber+BinAdd.m */; };
+		1107489B2100BFD600D9596A /* NSDecimalNumber+BinAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 110748972100BFD600D9596A /* NSDecimalNumber+BinAdd.m */; };
+		1107489F2104662D00D9596A /* NSData+BinAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1107489E2104662D00D9596A /* NSData+BinAdd.m */; };
+		11D438EA21057E0D00C97C2B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11D438E921057E0D00C97C2B /* Info.plist */; };
+		11D438F02106D14B00C97C2B /* XXReadConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D438EF2106D14B00C97C2B /* XXReadConfig.m */; };
+		11D438F3210721A300C97C2B /* XXCustomMankRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D438F2210721A300C97C2B /* XXCustomMankRange.m */; };
+		11D438FD21073C2E00C97C2B /* DXRPrivates.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D438FA21073C2E00C97C2B /* DXRPrivates.m */; };
+		11D438FE21073C2E00C97C2B /* DXRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D438FB21073C2E00C97C2B /* DXRUtils.m */; };
+		11D438FF21073C2E00C97C2B /* DXRTypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D438FC21073C2E00C97C2B /* DXRTypeConverter.m */; };
 		11D4EDDC20CA2E43001F28E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EDDB20CA2E43001F28E5 /* AppDelegate.m */; };
 		11D4EDDF20CA2E43001F28E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EDDE20CA2E43001F28E5 /* ViewController.m */; };
 		11D4EDE220CA2E43001F28E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D4EDE020CA2E43001F28E5 /* Main.storyboard */; };
@@ -21,9 +31,32 @@
 		11D4EE0B20CA5921001F28E5 /* XXReadChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EE0A20CA5921001F28E5 /* XXReadChapterModel.m */; };
 		11D4EE1420CA6143001F28E5 /* XXReadUtilites.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EE1320CA6143001F28E5 /* XXReadUtilites.m */; };
 		11D4EE1720CA6D28001F28E5 /* XXReadParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D4EE1520CA6D28001F28E5 /* XXReadParserManager.m */; };
+		A32FCFE1C794F2774545BD95 /* libPods-XXReadBookApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A6FAE6B3A29C2C0B719A05 /* libPods-XXReadBookApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1107489021005DF800D9596A /* NSString+BinAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BinAdd.m"; sourceTree = "<group>"; };
+		1107489121005DF800D9596A /* NSString+BinAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BinAdd.h"; sourceTree = "<group>"; };
+		110748962100BFD600D9596A /* NSNumber+BinAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+BinAdd.m"; sourceTree = "<group>"; };
+		110748972100BFD600D9596A /* NSDecimalNumber+BinAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+BinAdd.m"; sourceTree = "<group>"; };
+		110748982100BFD600D9596A /* NSNumber+BinAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+BinAdd.h"; sourceTree = "<group>"; };
+		110748992100BFD600D9596A /* NSDecimalNumber+BinAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+BinAdd.h"; sourceTree = "<group>"; };
+		1107489D2104662D00D9596A /* NSData+BinAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BinAdd.h"; sourceTree = "<group>"; };
+		1107489E2104662D00D9596A /* NSData+BinAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BinAdd.m"; sourceTree = "<group>"; };
+		11D438E921057E0D00C97C2B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = XXReadBookApp/Info.plist; sourceTree = SOURCE_ROOT; };
+		11D438EC21057E9900C97C2B /* XXReadBookPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXReadBookPrefixHeader.pch; sourceTree = "<group>"; };
+		11D438ED21057EB600C97C2B /* XXConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXConfig.h; sourceTree = "<group>"; };
+		11D438EE2106D14B00C97C2B /* XXReadConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXReadConfig.h; sourceTree = "<group>"; };
+		11D438EF2106D14B00C97C2B /* XXReadConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXReadConfig.m; sourceTree = "<group>"; };
+		11D438F1210721A300C97C2B /* XXCustomMankRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXCustomMankRange.h; sourceTree = "<group>"; };
+		11D438F2210721A300C97C2B /* XXCustomMankRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXCustomMankRange.m; sourceTree = "<group>"; };
+		11D438F621073C2E00C97C2B /* DXRPrivates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXRPrivates.h; sourceTree = "<group>"; };
+		11D438F721073C2E00C97C2B /* DXRDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXRDefs.h; sourceTree = "<group>"; };
+		11D438F821073C2E00C97C2B /* DXRTypeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXRTypeConverter.h; sourceTree = "<group>"; };
+		11D438F921073C2E00C97C2B /* DXRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXRUtils.h; sourceTree = "<group>"; };
+		11D438FA21073C2E00C97C2B /* DXRPrivates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXRPrivates.m; sourceTree = "<group>"; };
+		11D438FB21073C2E00C97C2B /* DXRUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXRUtils.m; sourceTree = "<group>"; };
+		11D438FC21073C2E00C97C2B /* DXRTypeConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXRTypeConverter.m; sourceTree = "<group>"; };
 		11D4EDD720CA2E43001F28E5 /* XXReadBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXReadBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D4EDDA20CA2E43001F28E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11D4EDDB20CA2E43001F28E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,7 +66,6 @@
 		11D4EDE420CA2E44001F28E5 /* XXReadBookApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XXReadBookApp.xcdatamodel; sourceTree = "<group>"; };
 		11D4EDE620CA2E46001F28E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11D4EDE920CA2E46001F28E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		11D4EDEB20CA2E46001F28E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D4EDEC20CA2E46001F28E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11D4EDF320CA2F38001F28E5 /* 《师士传说》.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "《师士传说》.txt"; sourceTree = "<group>"; };
 		11D4EDF920CA32BC001F28E5 /* XXReadModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXReadModel.h; sourceTree = "<group>"; };
@@ -48,6 +80,9 @@
 		11D4EE1320CA6143001F28E5 /* XXReadUtilites.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXReadUtilites.m; sourceTree = "<group>"; };
 		11D4EE1520CA6D28001F28E5 /* XXReadParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXReadParserManager.m; sourceTree = "<group>"; };
 		11D4EE1620CA6D28001F28E5 /* XXReadParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXReadParserManager.h; sourceTree = "<group>"; };
+		177233EE937DE585CFF3473C /* Pods-XXReadBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXReadBookApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXReadBookApp/Pods-XXReadBookApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1DD7FA2F4F61B0B12CC3C84C /* Pods-XXReadBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXReadBookApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXReadBookApp/Pods-XXReadBookApp.release.xcconfig"; sourceTree = "<group>"; };
+		54A6FAE6B3A29C2C0B719A05 /* libPods-XXReadBookApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XXReadBookApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,18 +90,105 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32FCFE1C794F2774545BD95 /* libPods-XXReadBookApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10D4C9DE88C70BE9DF1E8212 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				177233EE937DE585CFF3473C /* Pods-XXReadBookApp.debug.xcconfig */,
+				1DD7FA2F4F61B0B12CC3C84C /* Pods-XXReadBookApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1107488C21005DB200D9596A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1107489C2104662D00D9596A /* NSData */,
+				110748952100BFD600D9596A /* NSNumber */,
+				1107488F21005DDC00D9596A /* NSString */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1107488F21005DDC00D9596A /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				1107489121005DF800D9596A /* NSString+BinAdd.h */,
+				1107489021005DF800D9596A /* NSString+BinAdd.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		110748952100BFD600D9596A /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				110748962100BFD600D9596A /* NSNumber+BinAdd.m */,
+				110748972100BFD600D9596A /* NSDecimalNumber+BinAdd.m */,
+				110748982100BFD600D9596A /* NSNumber+BinAdd.h */,
+				110748992100BFD600D9596A /* NSDecimalNumber+BinAdd.h */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		1107489C2104662D00D9596A /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				1107489D2104662D00D9596A /* NSData+BinAdd.h */,
+				1107489E2104662D00D9596A /* NSData+BinAdd.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		11D438E821057D7200C97C2B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				11D438E921057E0D00C97C2B /* Info.plist */,
+				11D4EDE620CA2E46001F28E5 /* Assets.xcassets */,
+				11D4EDE820CA2E46001F28E5 /* LaunchScreen.storyboard */,
+				11D4EDDA20CA2E43001F28E5 /* AppDelegate.h */,
+				11D4EDDB20CA2E43001F28E5 /* AppDelegate.m */,
+				11D4EDEC20CA2E46001F28E5 /* main.m */,
+				11D4EDE320CA2E44001F28E5 /* XXReadBookApp.xcdatamodeld */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		11D438F421073C0000C97C2B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				11D438F521073C2E00C97C2B /* DXREasyDefs */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		11D438F521073C2E00C97C2B /* DXREasyDefs */ = {
+			isa = PBXGroup;
+			children = (
+				11D438F721073C2E00C97C2B /* DXRDefs.h */,
+				11D438F621073C2E00C97C2B /* DXRPrivates.h */,
+				11D438FA21073C2E00C97C2B /* DXRPrivates.m */,
+				11D438F921073C2E00C97C2B /* DXRUtils.h */,
+				11D438FB21073C2E00C97C2B /* DXRUtils.m */,
+				11D438F821073C2E00C97C2B /* DXRTypeConverter.h */,
+				11D438FC21073C2E00C97C2B /* DXRTypeConverter.m */,
+			);
+			path = DXREasyDefs;
+			sourceTree = "<group>";
+		};
 		11D4EDCE20CA2E43001F28E5 = {
 			isa = PBXGroup;
 			children = (
 				11D4EDF320CA2F38001F28E5 /* 《师士传说》.txt */,
 				11D4EDD920CA2E43001F28E5 /* XXReadBookApp */,
 				11D4EDD820CA2E43001F28E5 /* Products */,
+				10D4C9DE88C70BE9DF1E8212 /* Pods */,
+				D5CA9CAB9C521271E5455D7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,17 +203,14 @@
 		11D4EDD920CA2E43001F28E5 /* XXReadBookApp */ = {
 			isa = PBXGroup;
 			children = (
+				11D438ED21057EB600C97C2B /* XXConfig.h */,
+				11D438EC21057E9900C97C2B /* XXReadBookPrefixHeader.pch */,
+				11D438E821057D7200C97C2B /* Application */,
 				11D4EDF520CA3243001F28E5 /* ReadBook */,
-				11D4EDDA20CA2E43001F28E5 /* AppDelegate.h */,
-				11D4EDDB20CA2E43001F28E5 /* AppDelegate.m */,
+				11D438F421073C0000C97C2B /* Tool */,
 				11D4EDDD20CA2E43001F28E5 /* ViewController.h */,
 				11D4EDDE20CA2E43001F28E5 /* ViewController.m */,
 				11D4EDE020CA2E43001F28E5 /* Main.storyboard */,
-				11D4EDE620CA2E46001F28E5 /* Assets.xcassets */,
-				11D4EDE820CA2E46001F28E5 /* LaunchScreen.storyboard */,
-				11D4EDEB20CA2E46001F28E5 /* Info.plist */,
-				11D4EDEC20CA2E46001F28E5 /* main.m */,
-				11D4EDE320CA2E44001F28E5 /* XXReadBookApp.xcdatamodeld */,
 			);
 			path = XXReadBookApp;
 			sourceTree = "<group>";
@@ -99,6 +218,7 @@
 		11D4EDF520CA3243001F28E5 /* ReadBook */ = {
 			isa = PBXGroup;
 			children = (
+				1107488C21005DB200D9596A /* Category */,
 				11D4EDF820CA3274001F28E5 /* Controller */,
 				11D4EDF720CA3270001F28E5 /* View */,
 				11D4EDF620CA326B001F28E5 /* Model */,
@@ -121,6 +241,10 @@
 				11D4EE0720CA589F001F28E5 /* XXReadRecordModel.m */,
 				11D4EE1220CA6143001F28E5 /* XXReadUtilites.h */,
 				11D4EE1320CA6143001F28E5 /* XXReadUtilites.m */,
+				11D438EE2106D14B00C97C2B /* XXReadConfig.h */,
+				11D438EF2106D14B00C97C2B /* XXReadConfig.m */,
+				11D438F1210721A300C97C2B /* XXCustomMankRange.h */,
+				11D438F2210721A300C97C2B /* XXCustomMankRange.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,6 +263,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		D5CA9CAB9C521271E5455D7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54A6FAE6B3A29C2C0B719A05 /* libPods-XXReadBookApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11D4EDF020CA2E46001F28E5 /* Build configuration list for PBXNativeTarget "XXReadBookApp" */;
 			buildPhases = (
+				D0786297731EDE0C60AFE9B9 /* [CP] Check Pods Manifest.lock */,
 				11D4EDD320CA2E43001F28E5 /* Sources */,
 				11D4EDD420CA2E43001F28E5 /* Frameworks */,
 				11D4EDD520CA2E43001F28E5 /* Resources */,
@@ -200,11 +333,33 @@
 				11D4EDEA20CA2E46001F28E5 /* LaunchScreen.storyboard in Resources */,
 				11D4EDE720CA2E46001F28E5 /* Assets.xcassets in Resources */,
 				11D4EDF420CA2F38001F28E5 /* 《师士传说》.txt in Resources */,
+				11D438EA21057E0D00C97C2B /* Info.plist in Resources */,
 				11D4EDE220CA2E43001F28E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0786297731EDE0C60AFE9B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XXReadBookApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11D4EDD320CA2E43001F28E5 /* Sources */ = {
@@ -212,15 +367,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D4EE1720CA6D28001F28E5 /* XXReadParserManager.m in Sources */,
+				1107489221005DF900D9596A /* NSString+BinAdd.m in Sources */,
+				11D438FE21073C2E00C97C2B /* DXRUtils.m in Sources */,
 				11D4EE0820CA589F001F28E5 /* XXReadRecordModel.m in Sources */,
 				11D4EE0520CA554F001F28E5 /* XXReadChapterListModel.m in Sources */,
 				11D4EDE520CA2E44001F28E5 /* XXReadBookApp.xcdatamodeld in Sources */,
+				11D438F02106D14B00C97C2B /* XXReadConfig.m in Sources */,
 				11D4EE0B20CA5921001F28E5 /* XXReadChapterModel.m in Sources */,
 				11D4EE1420CA6143001F28E5 /* XXReadUtilites.m in Sources */,
+				1107489A2100BFD600D9596A /* NSNumber+BinAdd.m in Sources */,
 				11D4EDDF20CA2E43001F28E5 /* ViewController.m in Sources */,
+				11D438FD21073C2E00C97C2B /* DXRPrivates.m in Sources */,
 				11D4EDED20CA2E46001F28E5 /* main.m in Sources */,
+				1107489F2104662D00D9596A /* NSData+BinAdd.m in Sources */,
+				1107489B2100BFD600D9596A /* NSDecimalNumber+BinAdd.m in Sources */,
+				11D438F3210721A300C97C2B /* XXCustomMankRange.m in Sources */,
 				11D4EDDC20CA2E43001F28E5 /* AppDelegate.m in Sources */,
 				11D4EDFB20CA32BC001F28E5 /* XXReadModel.m in Sources */,
+				11D438FF21073C2E00C97C2B /* DXRTypeConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +522,12 @@
 		};
 		11D4EDF120CA2E46001F28E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 177233EE937DE585CFF3473C /* Pods-XXReadBookApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FM63V954T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XXReadBookApp/XXReadBookPrefixHeader.pch";
 				INFOPLIST_FILE = XXReadBookApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,10 +541,12 @@
 		};
 		11D4EDF220CA2E46001F28E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD7FA2F4F61B0B12CC3C84C /* Pods-XXReadBookApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FM63V954T;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XXReadBookApp/XXReadBookPrefixHeader.pch";
 				INFOPLIST_FILE = XXReadBookApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

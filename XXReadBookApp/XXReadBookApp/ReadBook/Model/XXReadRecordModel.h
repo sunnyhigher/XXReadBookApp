@@ -10,7 +10,8 @@
 
 #import <Foundation/Foundation.h>
 #import "XXReadChapterModel.h"
-@interface XXReadRecordModel : NSObject
+#import "XXCustomMankRange.h"
+@interface XXReadRecordModel : NSObject <NSCoding>
 
 /**
  小说名称
@@ -25,6 +26,11 @@
 /**
  当前章节阅读到的初始location
  */
-@property (nonatomic, strong) NSNumber *location;
+@property (nonatomic, strong) XXCustomMankRange *customMankRangeModel;
+
+/// 通过书名 获得阅读记录模型 没有则进行创建传出
++ (instancetype)readRecordModelBookName:(NSString *)bookName isUpdateFont:(Boolean)isUpdateFont isSave:(Boolean)isSave;
+
+- (void)modifyChapterID:(NSString *)chapterID updateFont:(Boolean)isUpdateFont save:(Boolean)isSave;
 
 @end

@@ -1,0 +1,28 @@
+PODS:
+  - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - PINCache (2.3)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - Masonry
+  - MJExtension
+  - PINCache
+  - YYCache
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - MJExtension
+    - PINCache
+    - YYCache
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: 3299aa2198c2fef4325917ade7fcb44b0268197a
+
+COCOAPODS: 1.5.3

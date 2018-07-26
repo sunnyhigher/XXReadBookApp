@@ -10,4 +10,6 @@
 
 @implementation XXReadChapterListModel
 
+MJCodingImplementation
+
 @end

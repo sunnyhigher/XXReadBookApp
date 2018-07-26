@@ -10,7 +10,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XXReadChapterModel : NSObject
+@class XXCustomMankRange;
+@interface XXReadChapterModel : NSObject <NSCoding> 
 
 /**
  名称
@@ -22,6 +23,11 @@
  章节名称
  */
 @property (nonatomic, copy) NSString *chapterName;
+
+/**
+ 章节id
+ */
+@property (nonatomic, copy) NSString *chapterId;
 
 /**
  本章内容
@@ -38,7 +44,7 @@
 /**
  每页的 Rang 数组(需通过字号字体间距等计算得出)
  */
-@property (nonatomic) NSRange contentPageRangArray;
+@property (nonatomic, strong) NSArray <XXCustomMankRange *> *contentPageRangArray;
 
 
 /**
@@ -52,6 +58,27 @@
  */
 @property (nonatomic, copy) NSString *nextChapterName;
 
+
+/**
+ 上一章章节id
+ */
+@property (nonatomic, copy) NSString *lastChapterId;
+
+
+/**
+ 下一章章节id
+ */
+@property (nonatomic, copy) NSString *nextChapterId;
+
+- (void)save;
+
++ (instancetype)readChapterModelBookName:(NSString *)bookName chapterId:(NSString *)chapterId;
+
+/// 更新字号并保存
+- (void)updateFontIsSave:(Boolean)isSave;
+
+/// 阅读页数
+- (XXCustomMankRange *)customMankRange:(XXCustomMankRange *)lastMankRange;
 
 
 
