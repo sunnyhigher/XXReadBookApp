@@ -31,7 +31,7 @@
         readModel.bookName = bookName;
         /// 章节目录
         readModel.readChapterListModels = [XXReadUtilites separateChapterListsBookName:bookName content:content];
-        [readModel.readRecordModel modifyChapterID:@"1" updateFont:YES save:YES];
+        [readModel.readRecordModel modifyChapterID:@"10" updateFont:YES save:YES];
         [readModel save];
     }
     

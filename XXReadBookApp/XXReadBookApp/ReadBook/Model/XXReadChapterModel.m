@@ -16,22 +16,21 @@
 MJCodingImplementation
 
 - (void)updateFontIsSave:(Boolean)isSave {
-    
-    NSDictionary *readAttribute = [[XXReadConfig shareInstance] readAttribute];
-    self.contentPageRangArray = [XXReadParserManager parserPageRangeString:self.content attrs:readAttribute];
-    self.contentPageCount = [NSNumber numberWithInteger:self.contentPageRangArray.count];
-    dispatch_async(dispatch_get_main_queue(), ^{
+//    dispatch_async(dispatch_get_main_queue(), ^{
+        NSDictionary *readAttribute = [[XXReadConfig shareInstance] readAttribute];
+        self.contentPageRangArray = [XXReadParserManager parserPageRangeString:self.content attrs:readAttribute];
+        self.contentPageCount = [NSNumber numberWithInteger:self.contentPageRangArray.count];
         if (isSave) {
             [self save];
         }
-    });
+//    });
 }
 
 
 - (void)save {
     PINCache *cache = [[PINCache alloc] initWithName:self.bookName rootPath:[XXReadUtilites readKeyedArchiverBookName:self.bookName]];
     [cache setObject:self forKey:self.chapterId];
-//    NSLog(@"%@成功", self.chapterId);
+    //    NSLog(@"%@成功", self.chapterId);
 }
 
 + (instancetype)readChapterModelBookName:(NSString *)bookName chapterId:(NSString *)chapterId {
