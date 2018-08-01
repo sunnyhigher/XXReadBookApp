@@ -11,6 +11,8 @@
 #import "XXReadChapterModel.h"
 #import "XXReadUtilites.h"
 
+#import "XXReadPageController.h"
+
 @interface ViewController ()
 
 @end
@@ -27,18 +29,11 @@
     [XXReadParserManager parserLocalModelWithURL:fileURL
                                readParserModel:^(XXReadModel *model){
                                    NSLog(@"%@", [model mj_JSONString]);
-                                   
+                                   XXReadPageController *controller = [XXReadPageController new];
+                                   controller.readModel = model;
+                                   [self.navigationController pushViewController:controller animated:YES];
                                }];
 }
-
-- (IBAction)sendClick:(id)sender {
-    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"《师士传说》" withExtension:@"txt"];
-    for (NSInteger i = 1; i < 600; i++) {
-        XXReadChapterModel *model = [XXReadChapterModel readChapterModelBookName:[XXReadUtilites getFileName:fileURL] chapterId:[NSString stringWithFormat:@"%ld", i]];
-//        NSLog(@"%@", model.chapterName);
-    }
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
